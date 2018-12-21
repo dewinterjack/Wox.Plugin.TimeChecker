@@ -1,0 +1,21 @@
+{
+  "ID": "9F40B9FFC4494CA781069BB7E065A2AF",
+
+  "ActionKeyword": "time",
+
+  "Name": "TimeChecker",
+
+  "Description": "A demo to learn how to build Wox plugins",
+
+  "Author": "Jack Dewinter",
+
+  "Version": "1.0.0",
+
+  "Language": "csharp",
+
+  "Website": "https://github.com/dewinterjack/Wox.Plugin.TimeChecker",
+
+  "IcoPath": "Images\\timeIcon.png",
+
+  "ExecuteFileName": "Wox.Plugin.TimeChecker.dll"
+}
