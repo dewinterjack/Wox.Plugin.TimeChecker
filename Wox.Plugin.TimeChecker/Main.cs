@@ -1,12 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Wox.Plugin.TimeChecker
 {
-    class Main
+    class Main : IPlugin
     {
+        public void Init(PluginInitContext context) { }
+        public List<Result> Query(Query query)
+        {
+            return new List<Result>
+            {
+                new Result
+                {
+                    Title = $"The time is:{DateTime.Now.ToString("t")}",
+                    IcoPath = "timeIcon.png",
+                    Action = _ =>
+                    {
+                        return true;
+                    }
+                },
+
+                new Result
+                {
+                    Title = $"The date: {DateTime.Today.ToString("d")}",
+                    IcoPath = "calendarIcon.png",
+                    Action = _ =>
+                    {
+                        return true;
+                    }
+                }
+            };
+        }
     }
 }
